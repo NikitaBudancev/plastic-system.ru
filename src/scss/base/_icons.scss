@@ -1,0 +1,13 @@
+.icon {
+  &-text {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    &-small {
+      img,svg {
+        max-width: 20px;
+      }
+    }
+  }
+}

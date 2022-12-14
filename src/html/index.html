@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__top-left">
+            <span class="location-text">Ваш город</span>
+            <button class="button button__location">Москва</button>
+          </div>
+          <div class="header__top-right">
+            <a class="header__top-link icon-text" href="#">
+              <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.8621 10.0498L13.4137 13.1123L10.8621 10.0498ZM10.8621 16.1748L13.4137 13.1123L10.8621 16.1748Z"
+                  stroke="white" stroke-width="2.45" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.8825 13.1126H3.91998M18.6812 21.6876H7.65623M18.6812 4.5376H7.65623M7.65623 21.6876V16.7876M7.65623 9.4376V4.5376M19.11 21.6876V4.5376"
+                  stroke="white" stroke-width="2.45" stroke-linecap="round" />
+              </svg>
+              <span class="text">Войти</span>
+            </a>
+            <a href="#" class="header__top-link icon-text">
+              <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.0396 13.0106L23.4688 14.45L16.8027 21.1772L13.2604 17.6043L14.6896 16.165L16.8027 18.2883L22.0396 13.0106ZM10.7083 17.6043L13.7708 20.6668H3.5625V18.6252C3.5625 16.3691 7.21708 14.5418 11.7292 14.5418L13.6585 14.6541L10.7083 17.6043ZM11.7292 4.3335C12.8121 4.3335 13.8507 4.7637 14.6165 5.52948C15.3823 6.29525 15.8125 7.33386 15.8125 8.41683C15.8125 9.4998 15.3823 10.5384 14.6165 11.3042C13.8507 12.07 12.8121 12.5002 11.7292 12.5002C10.6462 12.5002 9.60759 12.07 8.84181 11.3042C8.07604 10.5384 7.64583 9.4998 7.64583 8.41683C7.64583 7.33386 8.07604 6.29525 8.84181 5.52948C9.60759 4.7637 10.6462 4.3335 11.7292 4.3335Z"
+                  fill="white" />
+              </svg>
+              <span class="text">Зарегестрироваться</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <div class="header__bottom-left">
+            <a class="logo" href="/">
+              <img src="/assets/images/logo.svg" alt="РМ-Пласт">
+            </a>
+          </div>
+          <div class="header__bottom-center">
+            <div class="header__bottom-center-top">
+              <div class="header__bottom-center-item">
+                <a class="icon-text text-bold text-black" href="mailto:mail@mail2132.ru">
+                  <svg class="icon" width="25" height="26" viewBox="0 0 25 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.9167 4.81738H2.08337V21.484H22.9167V4.81738ZM20.8334 8.98405L12.5 14.1924L4.16671 8.98405V6.90072L12.5 12.109L20.8334 6.90072V8.98405Z"
+                      fill="#F3520B" />
+                  </svg>
+                  <span class="text">mail@mail2132.ru</span>
+                </a>
+              </div>
+              <div class="header__bottom-center-item">
+                <a class="icon-text text-bold text-black" href="tel:8 800 xxx xx xx">
+                  <svg class="icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.7906 9.64017C17.5194 9.64017 17.278 9.54253 17.0664 9.34725C16.8542 9.15265 16.7311 8.91126 16.6972 8.62308C16.4769 7.04658 15.8117 5.703 14.7017 4.59234C13.591 3.48235 12.2474 2.81717 10.6709 2.5968C10.3828 2.56289 10.1414 2.44423 9.94677 2.24082C9.75149 2.0374 9.65385 1.7916 9.65385 1.50342C9.65385 1.21525 9.75556 0.973516 9.95897 0.778234C10.1624 0.58363 10.3997 0.50328 10.6709 0.537183C12.8068 0.774505 14.6291 1.64751 16.1378 3.1562C17.6465 4.66489 18.5195 6.48718 18.7568 8.62308C18.7907 8.89431 18.7101 9.13163 18.5148 9.33505C18.3202 9.53846 18.0788 9.64017 17.7906 9.64017ZM13.5442 9.64017C13.3239 9.64017 13.1289 9.56389 12.9594 9.41133C12.7899 9.25876 12.6627 9.05535 12.578 8.80107C12.4424 8.30948 12.184 7.8728 11.803 7.49105C11.4212 7.10998 10.9845 6.85164 10.4929 6.71603C10.2387 6.63127 10.0353 6.50413 9.88269 6.33462C9.73013 6.1651 9.65385 5.96168 9.65385 5.72436C9.65385 5.38533 9.77251 5.1097 10.0098 4.89746C10.2472 4.68591 10.5099 4.61403 10.7981 4.68184C11.7474 4.90221 12.5654 5.3555 13.2523 6.0417C13.9385 6.72857 14.3918 7.54666 14.6122 8.49594C14.68 8.78412 14.6037 9.04687 14.3833 9.28419C14.163 9.52151 13.8833 9.64017 13.5442 9.64017ZM17.7397 18.794C15.553 18.794 13.4215 18.3065 11.3453 17.3314C9.26837 16.3571 7.42912 15.0687 5.82754 13.4665C4.22528 11.8649 2.93696 10.0257 1.96258 7.94875C0.987527 5.87252 0.5 3.74103 0.5 1.55428C0.5 1.24915 0.601709 0.994875 0.805128 0.791456C1.00855 0.588037 1.26282 0.486328 1.56795 0.486328H5.68718C5.9245 0.486328 6.1364 0.56261 6.32286 0.715174C6.50933 0.867738 6.61952 1.06268 6.65342 1.3L7.31453 4.85983C7.34843 5.09715 7.34436 5.31312 7.30232 5.50772C7.25961 5.703 7.16197 5.87693 7.0094 6.02949L4.56838 8.52137C5.28034 9.74188 6.1703 10.8861 7.23825 11.9541C8.3062 13.022 9.48433 13.9459 10.7726 14.7256L13.1628 12.3355C13.3154 12.1829 13.5147 12.0683 13.7609 11.9917C14.0063 11.9158 14.2477 11.8947 14.485 11.9286L17.994 12.6406C18.2313 12.6915 18.4263 12.8057 18.5788 12.9834C18.7314 13.1617 18.8077 13.3695 18.8077 13.6068V17.7261C18.8077 18.0312 18.706 18.2855 18.5026 18.4889C18.2991 18.6923 18.0449 18.794 17.7397 18.794Z"
+                      fill="#F3520B" />
+                  </svg>
+
+                  <span class="text">8 800 xxx xx xx</span>
+                </a>
+              </div>
+              <div class="header__bottom-center-item">
+                <a class="icon-text text-bold text-black" href="tel:8 800 xxx xx xx">
+                  <svg class="icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.7906 9.64017C17.5194 9.64017 17.278 9.54253 17.0664 9.34725C16.8542 9.15265 16.7311 8.91126 16.6972 8.62308C16.4769 7.04658 15.8117 5.703 14.7017 4.59234C13.591 3.48235 12.2474 2.81717 10.6709 2.5968C10.3828 2.56289 10.1414 2.44423 9.94677 2.24082C9.75149 2.0374 9.65385 1.7916 9.65385 1.50342C9.65385 1.21525 9.75556 0.973516 9.95897 0.778234C10.1624 0.58363 10.3997 0.50328 10.6709 0.537183C12.8068 0.774505 14.6291 1.64751 16.1378 3.1562C17.6465 4.66489 18.5195 6.48718 18.7568 8.62308C18.7907 8.89431 18.7101 9.13163 18.5148 9.33505C18.3202 9.53846 18.0788 9.64017 17.7906 9.64017ZM13.5442 9.64017C13.3239 9.64017 13.1289 9.56389 12.9594 9.41133C12.7899 9.25876 12.6627 9.05535 12.578 8.80107C12.4424 8.30948 12.184 7.8728 11.803 7.49105C11.4212 7.10998 10.9845 6.85164 10.4929 6.71603C10.2387 6.63127 10.0353 6.50413 9.88269 6.33462C9.73013 6.1651 9.65385 5.96168 9.65385 5.72436C9.65385 5.38533 9.77251 5.1097 10.0098 4.89746C10.2472 4.68591 10.5099 4.61403 10.7981 4.68184C11.7474 4.90221 12.5654 5.3555 13.2523 6.0417C13.9385 6.72857 14.3918 7.54666 14.6122 8.49594C14.68 8.78412 14.6037 9.04687 14.3833 9.28419C14.163 9.52151 13.8833 9.64017 13.5442 9.64017ZM17.7397 18.794C15.553 18.794 13.4215 18.3065 11.3453 17.3314C9.26837 16.3571 7.42912 15.0687 5.82754 13.4665C4.22528 11.8649 2.93696 10.0257 1.96258 7.94875C0.987527 5.87252 0.5 3.74103 0.5 1.55428C0.5 1.24915 0.601709 0.994875 0.805128 0.791456C1.00855 0.588037 1.26282 0.486328 1.56795 0.486328H5.68718C5.9245 0.486328 6.1364 0.56261 6.32286 0.715174C6.50933 0.867738 6.61952 1.06268 6.65342 1.3L7.31453 4.85983C7.34843 5.09715 7.34436 5.31312 7.30232 5.50772C7.25961 5.703 7.16197 5.87693 7.0094 6.02949L4.56838 8.52137C5.28034 9.74188 6.1703 10.8861 7.23825 11.9541C8.3062 13.022 9.48433 13.9459 10.7726 14.7256L13.1628 12.3355C13.3154 12.1829 13.5147 12.0683 13.7609 11.9917C14.0063 11.9158 14.2477 11.8947 14.485 11.9286L17.994 12.6406C18.2313 12.6915 18.4263 12.8057 18.5788 12.9834C18.7314 13.1617 18.8077 13.3695 18.8077 13.6068V17.7261C18.8077 18.0312 18.706 18.2855 18.5026 18.4889C18.2991 18.6923 18.0449 18.794 17.7397 18.794Z"
+                      fill="#F3520B" />
+                  </svg>
+
+                  <span class="text">8 800 xxx xx xx</span>
+                </a>
+              </div>
+              <div class="header__bottom-center-item search">
+                <form class="form__search" action="">
+                  <input class="input input__search" type="text" placeholder="поиск по сайту">
+                  <button class="button button-primary button__search button-icon">
+                    <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.9241 18.1845L23.3856 22.645L21.9116 24.1189L17.4512 19.6575C15.7916 20.9879 13.7272 21.7115 11.6002 21.7085C6.42516 21.7085 2.22516 17.5085 2.22516 12.3335C2.22516 7.1585 6.42516 2.9585 11.6002 2.9585C16.7752 2.9585 20.9752 7.1585 20.9752 12.3335C20.9782 14.4606 20.2546 16.5249 18.9241 18.1845ZM16.8345 17.4116C18.1565 16.0521 18.8948 14.2298 18.8918 12.3335C18.8918 8.30433 15.6283 5.04183 11.6002 5.04183C7.57099 5.04183 4.30849 8.30433 4.30849 12.3335C4.30849 16.3616 7.57099 19.6252 11.6002 19.6252C13.4964 19.6281 15.3188 18.8899 16.6783 17.5679L16.8345 17.4116Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="header__bottom-center-item icon-text">
+                <svg class="icon" width="23" height="24" viewBox="0 0 23 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_19_743)">
+                    <path
+                      d="M11.9939 12.385V9.20787C11.9939 8.92434 11.8982 8.68651 11.7067 8.49438C11.5146 8.30292 11.2768 8.20719 10.9932 8.20719C10.7097 8.20719 10.4722 8.30292 10.2807 8.49438C10.0886 8.68651 9.99255 8.92434 9.99255 9.20787V12.2099C9.99255 12.5435 10.0509 12.852 10.1677 13.1355C10.2844 13.4191 10.4595 13.6776 10.693 13.9111L12.8195 16.0375C13.0196 16.2376 13.2574 16.3377 13.5329 16.3377C13.8078 16.3377 14.0453 16.2376 14.2454 16.0375C14.4289 15.8374 14.5206 15.5999 14.5206 15.325C14.5206 15.0495 14.4289 14.82 14.2454 14.6365L11.9939 12.385ZM10.9932 4.20448C10.7097 4.20448 10.4722 4.30021 10.2807 4.49167C10.0886 4.6838 9.99255 4.92163 9.99255 5.20516C9.99255 5.48868 10.0886 5.72651 10.2807 5.91864C10.4722 6.1101 10.7097 6.20583 10.9932 6.20583C11.2768 6.20583 11.5146 6.1101 11.7067 5.91864C11.8982 5.72651 11.9939 5.48868 11.9939 5.20516C11.9939 4.92163 11.8982 4.6838 11.7067 4.49167C11.5146 4.30021 11.2768 4.20448 10.9932 4.20448ZM18.9986 12.2099C18.9986 11.9264 18.9026 11.6885 18.7104 11.4964C18.519 11.305 18.2815 11.2092 17.998 11.2092C17.7144 11.2092 17.4769 11.305 17.2855 11.4964C17.0934 11.6885 16.9973 11.9264 16.9973 12.2099C16.9973 12.4934 17.0934 12.7309 17.2855 12.9224C17.4769 13.1145 17.7144 13.2106 17.998 13.2106C18.2815 13.2106 18.519 13.1145 18.7104 12.9224C18.9026 12.7309 18.9986 12.4934 18.9986 12.2099ZM10.9932 18.214C10.7097 18.214 10.4722 18.31 10.2807 18.5022C10.0886 18.6936 9.99255 18.9311 9.99255 19.2146C9.99255 19.4982 10.0886 19.7357 10.2807 19.9271C10.4722 20.1193 10.7097 20.2153 10.9932 20.2153C11.2768 20.2153 11.5146 20.1193 11.7067 19.9271C11.8982 19.7357 11.9939 19.4982 11.9939 19.2146C11.9939 18.9311 11.8982 18.6936 11.7067 18.5022C11.5146 18.31 11.2768 18.214 10.9932 18.214ZM4.98916 12.2099C4.98916 11.9264 4.89343 11.6885 4.70197 11.4964C4.50984 11.305 4.27201 11.2092 3.98848 11.2092C3.70496 11.2092 3.46713 11.305 3.275 11.4964C3.08354 11.6885 2.98781 11.9264 2.98781 12.2099C2.98781 12.4934 3.08354 12.7309 3.275 12.9224C3.46713 13.1145 3.70496 13.2106 3.98848 13.2106C4.27201 13.2106 4.50984 13.1145 4.70197 12.9224C4.89343 12.7309 4.98916 12.4934 4.98916 12.2099ZM10.9932 22.2167C9.60895 22.2167 8.30807 21.9538 7.09058 21.4281C5.87309 20.9031 4.81404 20.1903 3.91343 19.2897C3.01282 18.3891 2.30001 17.33 1.77498 16.1125C1.24929 14.8951 0.98645 13.5942 0.98645 12.2099C0.98645 10.8256 1.24929 9.52475 1.77498 8.30726C2.30001 7.08977 3.01282 6.03072 3.91343 5.13011C4.81404 4.2295 5.87309 3.51635 7.09058 2.99066C8.30807 2.46564 9.60895 2.20312 10.9932 2.20312C12.3775 2.20312 13.6784 2.46564 14.8959 2.99066C16.1134 3.51635 17.1724 4.2295 18.073 5.13011C18.9736 6.03072 19.6864 7.08977 20.2115 8.30726C20.7372 9.52475 21 10.8256 21 12.2099C21 13.5942 20.7372 14.8951 20.2115 16.1125C19.6864 17.33 18.9736 18.3891 18.073 19.2897C17.1724 20.1903 16.1134 20.9031 14.8959 21.4281C13.6784 21.9538 12.3775 22.2167 10.9932 22.2167Z"
+                      fill="#F3520B" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_19_743">
+                      <rect width="22.084" height="22.084" fill="white" transform="translate(0.146118 0.973145)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span class="text">
+                  <span class="text-block">пн.- пт. - с 9.00 до 18.00</span>
+                  <span class="text-block">сб., вс. - выходной</span>
+                </span>
+              </div>
+              <div class="header__bottom-center-item">
+                <button class="button button-primary button-icon">Заказать звонок</button>
+              </div>
+            </div>
+            <nav class="menu">
+              <ul class="list menu__list">
+                <li class="munu__item">
+                  <a class="menu__link menu__link-catalog" href="/">Каталог</a>
+                </li>
+                <li class="munu__item">
+                  <a class="menu__link" href="/">Прайс-лист</a>
+                </li>
+                <li class="munu__item">
+                  <a class="menu__link" href="/">О компании</a>
+                </li>
+                <li class="munu__item">
+                  <a class="menu__link" href="/">Доставка</a>
+                </li>
+                <li class="munu__item">
+                  <a class="menu__link" href="/">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__bottom-right">
+            <div class="header__bottom-right-top">
+              <a class="icon-text header__cart" href="">
+                <img src="/assets/images/cart-orange.svg" alt="">
+                <span class="text">
+                  <span class="text-block">Корзина</span>
+                  <span class="text-block">0 руб.</span>
+                </span>
+              </a>
+            </div>
+            <div class="header__bottom-right-bottom">
+              <a class="icon compare-btn active" href="/">
+                <img src="/assets/images/compare.svg" alt="">
+              </a>
+              <a class="icon" href="/">
+                <img src="/assets/images/favorites.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <img src="/assets/images/banner.jpg" alt="">
+    <div class="banner__content">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__title">
+            Пластиковые контейнеры
+          </div>
+          <div class="banner__subtitle">для работы и дома</div>
+          <button class="button-secondary">Выбрать</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="popular">
+    <div class="container">
+      <div class="popular__inner">
+        <div class="title">
+          Популярные категории
+        </div>
+        <ul class="list popular__cards">
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                Пластиковые ящики
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                Пластиковые контейнеры
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                Пластиковые ящики
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                пластиковые емкости
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                Пластиковые ящики
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="list popular__card">
+            <div class="popular__head">
+              <a  class="popular__head-link" href="#">
+                Пластиковые ящики
+              </a>
+            </div>
+            <ul class="list popular__list">
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для обуви
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для одежды
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для переезда
+                </a>
+              </li>
+              <li class="popular__item">
+                <a class="popular__link" href="/">
+                  Ящики для транспортировки
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__inner">
+        <div class="title">наши преимущества</div>
+        <ul class="list advantages__list">
+          <div class="advantages__item">
+            <img class="advantages__img" src="/assets/images/home/advantage_1.svg" alt="наши преимущества">
+            <div class="advantages__title">Широкая <span class="text-block">география складов</span></div>
+            <div class="advantages__text">13 складов готовой продукции</div>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__img" src="/assets/images/home/advantage_2.svg" alt="наши преимущества">
+            <div class="advantages__title">Большой ассортимент</div>
+            <div class="advantages__text">пластиковой тары и полимерных материалов в наличии</div>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__img" src="/assets/images/home/advantage_3.svg" alt="наши преимущества">
+            <div class="advantages__title">Клиентский сервис</div>
+            <div class="advantages__text">профессиональные менеджеры ответят на Ваш запрос в течение 1 часа</div>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__img" src="/assets/images/home/advantage_4.svg" alt="наши преимущества">
+            <div class="advantages__title">Низкие цены</div>
+            <div class="advantages__text">мы официальный дилер ведущих производителей в России и зарубежом</div>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__img" src="/assets/images/home/advantage_5.svg" alt="наши преимущества">
+            <div class="advantages__title">Собственный <span class="text-block">отдел логистики</span></div>
+            <div class="advantages__text">доставку берем на себя!</div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="hits">
+    <div class="container">
+      <div class="hits__inner">
+        <div class="title">
+          Хиты продаж
+        </div>
+        <ul class="list products__list">
+          <li class="product product-new">
+            <div class="favorites">
+              <button class="icon fovorites__button">
+                <img src="/assets/images/favorites.svg" alt="">
+              </button>
+            </div>
+            <a class="product__img-link" href="#">
+              <img class="product__img" src="/assets/images/product.jpg" alt="">
+            </a>
+            <div class="product__rating product__rating-card">
+              <div class="group-section">
+                <fieldset class="rating">
+                  <div class="rating__group" id="reviewStars-input">
+                    <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+                    <label title="gorgeous" for="star-4"></label>
+                    <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+                    <label title="good" for="star-3"></label>
+                    <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+                    <label title="regular" for="star-2"></label>
+                    <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+                    <label title="poor" for="star-1"></label>
+                    <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+                    <label title="bad" for="star-0"></label>
+                  </div>
+                </fieldset>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="product__title">
+              <a href="#" class="product__title-link">
+                Ящик универсальный
+              </a>
+            </div>
+            <ul class="list product__params">
+              <li class="product__param">
+                <span class="text-bold">Объем(л.)</span>
+                - 1000
+              </li>
+
+
+              <li class="product__param">
+                <span class="text-bold">Высота(см.)</span>
+                - 2000
+              </li>
+              <li class="product__param">
+                <span class="text-bold">Вес(кг.)</span>
+                - 100
+              </li>
+              <li class="product__param">
+                <span class="text-bold">Ширина(см.)</span>
+                - 1000
+              </li>
+              <li class="product__param">
+                <span class="text-bold">Материал</span>
+                - пластик
+              </li>
+
+
+            </ul>
+            <div class="product__cols">
+              <div class="product__col">
+                <div class="availability">
+                  Есть в наличии
+                </div>
+                <div class="product__vendor">артикул: 00122</div>
+              </div>
+              <button class="icon compare-btn product__compare active">
+                <img src="/assets/images/compare.svg" alt="">
+              </button>
+            </div>
+            <div class="product__cols">
+              <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+              <div class="product__count">
+                <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+                <button class="product__calc-plus">+</button>
+                <button class="product__calc-minus">-</button>
+              </div>
+            </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+      </li>
+      <li class="product product-new">
+        <div class="favorites">
+          <button class="icon fovorites__button">
+            <img src="/assets/images/favorites.svg" alt="">
+          </button>
+        </div>
+        <a class="product__img-link" href="#">
+          <img class="product__img" src="/assets/images/product.jpg" alt="">
+        </a>
+        <div class="product__rating product__rating-card">
+          <div class="group-section">
+            <fieldset class="rating">
+              <div class="rating__group" id="reviewStars-input">
+                <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+                <label title="gorgeous" for="star-4"></label>
+                <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+                <label title="good" for="star-3"></label>
+                <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+                <label title="regular" for="star-2"></label>
+                <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+                <label title="poor" for="star-1"></label>
+                <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+                <label title="bad" for="star-0"></label>
+              </div>
+            </fieldset>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="product__title">
+          <a href="#" class="product__title-link">
+            Ящик универсальный
+          </a>
+        </div>
+        <ul class="list product__params">
+          <li class="product__param">
+            <span class="text-bold">Объем(л.)</span>
+            - 1000
+          </li>
+
+
+          <li class="product__param">
+            <span class="text-bold">Высота(см.)</span>
+            - 2000
+          </li>
+          <li class="product__param">
+            <span class="text-bold">Вес(кг.)</span>
+            - 100
+          </li>
+          <li class="product__param">
+            <span class="text-bold">Ширина(см.)</span>
+            - 1000
+          </li>
+          <li class="product__param">
+            <span class="text-bold">Материал</span>
+            - пластик
+          </li>
+
+
+        </ul>
+        <div class="product__cols">
+          <div class="product__col">
+            <div class="availability">
+              Есть в наличии
+            </div>
+            <div class="product__vendor">артикул: 00122</div>
+          </div>
+          <button class="icon compare-btn product__compare active">
+            <img src="/assets/images/compare.svg" alt="">
+          </button>
+        </div>
+        <div class="product__cols">
+          <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+          <div class="product__count">
+            <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+            <button class="product__calc-plus">+</button>
+            <button class="product__calc-minus">-</button>
+          </div>
+        </div>
+    </div>
+    <div class="product__cols">
+      <button class="button product__button icon-text icon-text-small button-primary">
+        <img src="/assets/images/cart-white.svg" alt="">
+        <span class="text">в корзину</span>
+      </button>
+      <button class="button product__button button-secondary">
+        купить в 1 клик
+      </button>
+    </div>
+    </li>
+    <li class="product">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    <li class="product">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    <li class="product product-new">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    <li class="product product-new">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    <li class="product product-new">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    <li class="product product-new">
+      <div class="favorites">
+        <button class="icon fovorites__button">
+          <img src="/assets/images/favorites.svg" alt="">
+        </button>
+      </div>
+      <a class="product__img-link" href="#">
+        <img class="product__img" src="/assets/images/product.jpg" alt="">
+      </a>
+      <div class="product__rating product__rating-card">
+        <div class="group-section">
+          <fieldset class="rating">
+            <div class="rating__group" id="reviewStars-input">
+              <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+              <label title="gorgeous" for="star-4"></label>
+              <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+              <label title="good" for="star-3"></label>
+              <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+              <label title="regular" for="star-2"></label>
+              <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+              <label title="poor" for="star-1"></label>
+              <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+              <label title="bad" for="star-0"></label>
+            </div>
+          </fieldset>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="product__title">
+        <a href="#" class="product__title-link">
+          Ящик универсальный
+        </a>
+      </div>
+      <ul class="list product__params">
+        <li class="product__param">
+          <span class="text-bold">Объем(л.)</span>
+          - 1000
+        </li>
+
+
+        <li class="product__param">
+          <span class="text-bold">Высота(см.)</span>
+          - 2000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Вес(кг.)</span>
+          - 100
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Ширина(см.)</span>
+          - 1000
+        </li>
+        <li class="product__param">
+          <span class="text-bold">Материал</span>
+          - пластик
+        </li>
+
+
+      </ul>
+      <div class="product__cols">
+        <div class="product__col">
+          <div class="availability">
+            Есть в наличии
+          </div>
+          <div class="product__vendor">артикул: 00122</div>
+        </div>
+        <button class="icon compare-btn product__compare active">
+          <img src="/assets/images/compare.svg" alt="">
+        </button>
+      </div>
+      <div class="product__cols">
+        <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+        <div class="product__count">
+          <input class="input product__count-input" type="number" value="150"">
+                <div class=" product__calc">
+          <button class="product__calc-plus">+</button>
+          <button class="product__calc-minus">-</button>
+        </div>
+      </div>
+      </div>
+      <div class="product__cols">
+        <button class="button product__button icon-text icon-text-small button-primary">
+          <img src="/assets/images/cart-white.svg" alt="">
+          <span class="text">в корзину</span>
+        </button>
+        <button class="button product__button button-secondary">
+          купить в 1 клик
+        </button>
+      </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="partners__inner">
+        <div class="title">Наши партнеры</div>
+        <ul class="list partners__list slider-partners">
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_1.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_2.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_3.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_4.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_5.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_6.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_7.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_8.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="/assets/images/partners/partners_9.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="news news-index">
+    <div class="container">
+      <div class="news__inner">
+        <div class="title-link">
+          <div class="title">Новости</div>
+          <a class="link" href="#">все новости</a>
+        </div>
+        <ul class="list news__list">
+          <li class="news__card">
+            <div class="news__img">
+              <a href="#">
+                <img src="/assets/images/news-img.jpg" alt="">
+              </a>
+            </div>
+            <div class="icon-text news__date">
+              <img class="icon" src="/assets/images/caladar.svg" alt="">
+              <span class="text">05.06.22</span>
+            </div>
+            <div class="news__title">
+              <a class="news__link" href="#">Lorem ipsum dolor sit amet consectetur. Tortor tortor at sed tellus
+                pulvinar.
+                Gravida.</a>
+            </div>
+            <div class="preview__text">Lorem ipsum dolor sit amet consectetur. Neque euismod in augue purus massa quis
+              et tristique eu.
+              Lorem ipsum dolor sit amet consectetur.
+              <a class="news__detail" href="#"> >></a>
+            </div>
+          </li>
+          <li class="news__card">
+            <div class="news__img">
+              <a href="#">
+                <img src="/assets/images/news-img.jpg" alt="">
+              </a>
+            </div>
+            <div class="icon-text news__date">
+              <img class="icon" src="/assets/images/caladar.svg" alt="">
+              <span class="text">05.06.22</span>
+            </div>
+            <div class="news__title">
+              <a class="news__link" href="#">Lorem ipsum dolor sit amet consectetur. Tortor tortor at sed tellus
+                pulvinar.
+                Gravida.</a>
+            </div>
+            <div class="preview__text">Lorem ipsum dolor sit amet consectetur. Neque euismod in augue purus massa quis
+              et tristique eu.
+              Lorem ipsum dolor sit amet consectetur.
+              <a class="news__detail" href="#"> >></a>
+            </div>
+          </li>
+          <li class="news__card">
+            <div class="news__img">
+              <a href="#">
+                <img src="/assets/images/news-img.jpg" alt="">
+              </a>
+            </div>
+            <div class="icon-text news__date">
+              <img class="icon" src="/assets/images/caladar.svg" alt="">
+              <span class="text">05.06.22</span>
+            </div>
+            <div class="news__title">
+              <a class="news__link" href="#">Lorem ipsum dolor sit amet consectetur. Tortor tortor at sed tellus
+                pulvinar.
+                Gravida.</a>
+            </div>
+            <div class="preview__text">Lorem ipsum dolor sit amet consectetur. Neque euismod in augue purus massa quis
+              et tristique eu.
+              Lorem ipsum dolor sit amet consectetur.
+              <a class="news__detail" href="#"> >></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a href="/">
+              <img class="footer__logo-img" src="/assets/images/logo-bg.svg" alt="РМ-Пласт">
+            </a>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">РМ-Пласт</div>
+            <a class="footer__menu-link" href="#">О КОМПАНИИ</a>
+            <a class="footer__menu-link" href="#">Контакты</a>
+            <a class="footer__menu-link" href="#">ВАКАНСИИ</a>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">Помощь покупателю</div>
+            <a class="footer__menu-link" href="#">КАК МЫ РАБОТАЕМ</a>
+            <a class="footer__menu-link" href="#">ДОСТАВКА И ОПЛАТА</a>
+            <a class="footer__menu-link" href="#">карта сайта</a>
+          </div>
+          <div class="footer__address">
+            <div class="icon-text footer__adress-item">
+              <img class="icon" width="24" height="24" src="/assets/images/map.svg" alt="">
+              <span class="text">
+                <span class="text-block">г. Санкт-Петербург,</span>
+                ул. Азовская дом 6, корп.3
+              </span>
+            </div>
+            <div class="icon-text footer__adress-item">
+              <img class="icon" width="24" height="24" src="/assets/images/watch.svg" alt="">
+              <span class="text">
+                <span class="text-block">пн.- пт. - с 9.00 до 18.00</span>
+                сб., вс. - выходной
+              </span>
+            </div>
+            <div class="footer__adress-item">
+              <a class="footer__link icon-text" href="mailto:mail@maifcdffdfdfdl.ru">
+                <img class="icon" width="24" height="24" src="/assets/images/letter.svg" alt="">
+                <span class="text">mail@maifcdffdfdfdl.ru</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__phones">
+            <div class="footer__phone">
+              <a class="footer__link icon-text" href="tel:132123123211">
+                <img class="icon" width="24" height="24" src="/assets/images/phone.svg" alt="">
+                <span class="text">8 800 xxx xx xx</span>
+              </a>
+            </div>
+            <div class="footer__phone">
+              <a class="footer__link icon-text" href="tel:8 800 xxx xx xx">
+                <img class="icon" width="24" height="24" src="/assets/images/phone.svg" alt="">
+                <span class="text">8 800 xxx xx xx</span>
+              </a>
+            </div>
+            <div class="block">
+              <button class="button-secondary">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-left">
+            <a class="footer__link" href="#">политика конфиденциальности</a>
+            <a class="footer__link" href="#">договор-оферта</a>
+          </div>
+          <div class="footer__bottom-right">
+            <ul class="list socials">
+              <li class="social">
+                <a class="social__link" href="/">
+                  <img class="social__img" src="/assets/images/telegram.svg" alt="">
+                </a>
+              </li>
+              <li class="social">
+                <a class="social__link" href="/">
+                  <img class="social__img" src="/assets/images/vk.svg" alt="">
+                </a>
+              </li>
+              <li class="social">
+                <a class="social__link" href="/">
+                  <img class="social__img" src="/assets/images/insta.svg" alt="">
+                </a>
+              </li>
+              <li class="social">
+                <a class="social__link" href="/">
+                  <img class="social__img" src="/assets/images/whatsapp.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+
+</html>
