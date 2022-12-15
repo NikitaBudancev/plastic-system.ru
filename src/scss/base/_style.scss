@@ -78,10 +78,40 @@ button {
   }
 }
 
+.list-dots {
+  li {
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 5px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      background-color: $secondary;
+      border-radius: 50%;
+      content: "";
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .container {
   max-width: 1190px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.block {
+  &-center {
+    text-align: center;
+  }
+}
+
+.load-more {
+  margin-top: 50px;
 }
 
 .text {
@@ -169,6 +199,25 @@ button {
     }
   }
 }
+
+.btn-menu-mobile {
+  padding: 0;
+}
+
+.text {
+  &-block {
+    display: block;
+  }
+
+  &-black {
+    color: #565656;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+}
+
 
 .title {
   margin: 100px 0 60px;
@@ -635,6 +684,7 @@ button {
     z-index: 2;
     font-size: 0;
     transform: translateY(-50%);
+    background-color: transparent;
 
     &:hover {
       background-color: transparent;
@@ -687,6 +737,7 @@ button {
 
   &__date {
     justify-content: center;
+    color: #7E7E7E;
 
     .icon {
       max-width: 19px;
@@ -794,4 +845,14 @@ button {
   &__img {
     max-width: 40px;
   }
+}
+
+.fade {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  background: #00000040;
 }

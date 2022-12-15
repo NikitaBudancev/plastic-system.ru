@@ -1,5 +1,93 @@
+.submenu {
+  background-color: $light;
+  padding: 20px 30px 30px 20px;
+  border: 1px solid $secondary;
+  border-radius: 5px 5px 0 0;
+
+
+  &-box {
+    display: none;
+    position: absolute;
+    top: 45px;
+    z-index: 2;
+    width: 290px;
+    padding-top: 5px;
+    max-height: 750px;
+    overflow-y: auto;
+
+    &.active {
+      display: block;
+    }
+  }
+
+
+  &-btn {
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s;
+  }
+
+  &__list {
+    display: none;
+    padding-left: 8px;
+    margin-bottom: 20px;
+
+    &-link {
+      font-size: 15px;
+      color: $dark;
+    }
+  }
+
+  &__item {
+    &.active {
+      .submenu__list {
+        display: block;
+      }
+
+      .submenu-btn {
+        transform: rotate(-90deg);
+      }
+
+    }
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $primary;
+      margin-bottom: 14px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.menu__item.parent {
+  position: relative;
+}
+
 .header {
-  padding-bottom: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7e7e7e;
 
   &__top {
     color: $light;
@@ -33,6 +121,7 @@
       display: flex;
       gap: 50px;
       align-items: center;
+      justify-content: space-between;
     }
 
     &-left {
@@ -43,7 +132,7 @@
     &-center {
       &-top {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 185px 167px;
         gap: 10px 36px;
         margin-bottom: 15px;
       }
@@ -75,6 +164,10 @@
     font-size: 18px;
     font-weight: 500;
     color: #979797;
+
+    img {
+      max-width: 50px;
+    }
   }
 
   .compare-btn::before {
@@ -91,21 +184,23 @@
 .menu {
   &__list {
     display: flex;
-    gap: 60px;
+    gap: 56px;
     align-items: center;
   }
 
   &__link {
     font-size: 18px;
     font-weight: 500;
-    color: #231F20;
-  
+    color: #231f20;
+
     &-catalog {
+      position: relative;
+      z-index: 3;
       display: block;
       padding: 9px 42px 9px 52px;
       color: $light;
       background-color: $secondary;
-      background-image: url('#{$path}ri_menu-2-line.svg');
+      background-image: url("#{$path}ri_menu-2-line.svg");
       background-repeat: no-repeat;
       background-position: 12px;
       border-radius: 5px;
@@ -115,7 +210,5 @@
         background-color: $secondary-dark;
       }
     }
-  
   }
-
 }
