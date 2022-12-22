@@ -30,6 +30,16 @@
 
 @font-face {
   font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("#{$path-fonts}RobotoCondensed-Medium.woff2") format("woff2"),
+    url("#{$path-fonts}RobotoCondensed-Medium.woff") format("woff"),
+    url("#{$path-fonts}RobotoCondensed-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 400;
   src: url("#{$path-fonts}RobotoCondensed-Italic.woff2") format("woff2"),

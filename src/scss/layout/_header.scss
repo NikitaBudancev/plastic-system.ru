@@ -8,10 +8,10 @@
   &-box {
     display: none;
     position: absolute;
-    top: 45px;
+    top: 39px;
     z-index: 2;
     width: 290px;
-    padding-top: 5px;
+    padding-top: 8px;
     max-height: 750px;
     overflow-y: auto;
 
@@ -88,6 +88,7 @@
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #7e7e7e;
+  padding-bottom: 13px;
 
   &__top {
     color: $light;
@@ -97,6 +98,7 @@
       display: flex;
       justify-content: space-between;
       padding: 10px 0;
+      margin-left: -5px;
     }
 
     &-right {
@@ -107,6 +109,7 @@
 
     &-link {
       color: $light;
+      font-size: 14px;
 
       &:hover {
         color: $grey;
@@ -115,13 +118,14 @@
   }
 
   &__bottom {
-    padding-top: 11px;
+    padding-top: 5px;
 
     &-inner {
       display: flex;
       gap: 50px;
       align-items: center;
       justify-content: space-between;
+      margin-left: 18px;
     }
 
     &-left {
@@ -129,12 +133,20 @@
       max-width: 128px;
     }
 
+    &-right {
+      min-width: 146px;
+      &-top {
+        margin-left: -10px;
+      }
+    }
+
     &-center {
       &-top {
         display: grid;
         grid-template-columns: 1fr 185px 167px;
         gap: 10px 36px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
       }
 
       &-item {
@@ -146,6 +158,11 @@
         .text-block {
           line-height: 1.2;
         }
+
+        &.phone {
+          font-size: 20px;
+        }
+
       }
     }
 
@@ -154,8 +171,6 @@
         display: flex;
         gap: 16px;
         align-items: center;
-        margin-top: 10px;
-        margin-left: 10px;
       }
     }
   }
@@ -204,6 +219,8 @@
       background-repeat: no-repeat;
       background-position: 12px;
       border-radius: 5px;
+      height: 40px;
+      line-height: 19px;
 
       &:hover {
         color: $light;

@@ -11,16 +11,37 @@ $(function () {
         breakpoint: 1400,
         settings: {
           slidesToShow: 5,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
-    ]
+    ],
   });
+
+  if (window.matchMedia("(max-width: 1210px)").matches) {
+    $(".slider-mobile").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 870,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
 
   let menuList = document.querySelectorAll(".menu");
 
@@ -33,12 +54,11 @@ $(function () {
         let currentMenuItem = toggleBtnSubmenu.closest(".submenu__item");
         currentMenuItem.classList.toggle("active");
       } else if (menuItemParent && $(window).width() < 1160) {
-        $(menuItemParent.querySelector('.submenu-box')).fadeToggle(100);
+        $(menuItemParent.querySelector(".submenu-box")).fadeToggle(100);
         $(".fade").fadeToggle(100);
         // let submenu = menuItemParent.querySelector('.submenu-box');
-        
+
         // submenu.classList.toggle('active');
-        
       } else {
         return;
       }
@@ -55,7 +75,7 @@ $(function () {
 
   $(".fade").on("click", function () {
     mobileMenu.classList.remove("active");
-    $('.submenu-box').fadeOut(100);
+    $(".submenu-box").fadeOut(100);
     $(this).fadeOut(100);
   });
 });
