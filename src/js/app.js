@@ -78,4 +78,30 @@ $(function () {
     $(".submenu-box").fadeOut(100);
     $(this).fadeOut(100);
   });
+
+  let catalogGrid = document.querySelector(".catalog-grid");
+  let catalogBlock = document.querySelector(".products__list-grid");
+
+  if (catalogBlock) {
+    catalogGrid.addEventListener("click", function (event) {
+      let gridBtn = event.target.closest(".grid-btn");
+
+      console.log(gridBtn);
+
+      if (gridBtn) {
+        let grid = gridBtn.dataset.grid;
+
+        switch (grid) {
+          case "default":
+            catalogBlock.classList.remove("grid-full");
+            break;
+          case "column":
+            catalogBlock.classList.add("grid-full");
+            break;
+        }
+      } else {
+        return;
+      }
+    });
+  }
 });

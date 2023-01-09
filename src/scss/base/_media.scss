@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1160px) {
-  .menu__item.parent {
+ .menu:not(.catalog-menu) .menu__item.parent {
     &:hover {
       .submenu-box {
         display: block;
