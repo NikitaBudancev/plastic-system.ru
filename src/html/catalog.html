@@ -37,7 +37,7 @@
       <div class="catalog__cols">
         <div class="catalog__left">
           <div class="catalog__left-row">
-            <div class="menu catalog-menu">
+            <div class="menu catalog-menu catalog-menu-left">
               <div class="list menu__list">
                 <div class="menu__item parent menu__item-catalog">
                   <button class="menu__link menu__link-catalog">Каталог</button>
@@ -354,7 +354,7 @@
               </div>
             </div>
           </div>
-          <ul class="list products__list products__list-grid grid-full">
+          <ul class="list products__list products__list-grid">
             <li class="product product-new">
               <div class="favorites">
                 <button class="icon fovorites__button">
@@ -414,7 +414,7 @@
 
 
               </ul>
-              <div class="product__cols">
+              <div class="product__cols product__cols-availability">
                 <div class="product__col">
                   <div class="availability">
                     Есть в наличии
@@ -483,8 +483,6 @@
               <span class="text-bold">Объем(л.)</span>
               - 1000
             </li>
-
-
             <li class="product__param">
               <span class="text-bold">Высота(см.)</span>
               - 2000
@@ -501,10 +499,8 @@
               <span class="text-bold">Материал</span>
               - пластик
             </li>
-
-
           </ul>
-          <div class="product__cols">
+          <div class="product__cols product__cols-availability">
             <div class="product__col">
               <div class="availability">
                 Есть в наличии
@@ -594,7 +590,7 @@
 
 
         </ul>
-        <div class="product__cols">
+        <div class="product__cols product__cols-availability">
           <div class="product__col">
             <div class="availability">
               Есть в наличии
@@ -684,7 +680,7 @@
 
 
       </ul>
-      <div class="product__cols">
+      <div class="product__cols product__cols-availability">
         <div class="product__col">
           <div class="availability">
             Есть в наличии
@@ -774,7 +770,7 @@
 
 
     </ul>
-    <div class="product__cols">
+    <div class="product__cols product__cols-availability">
       <div class="product__col">
         <div class="availability">
           Есть в наличии
@@ -864,7 +860,7 @@
 
 
     </ul>
-    <div class="product__cols">
+    <div class="product__cols product__cols-availability">
       <div class="product__col">
         <div class="availability">
           Есть в наличии
@@ -954,7 +950,7 @@
 
 
     </ul>
-    <div class="product__cols">
+    <div class="product__cols product__cols-availability">
       <div class="product__col">
         <div class="availability">
           Есть в наличии
@@ -1044,7 +1040,97 @@
 
 
     </ul>
+    <div class="product__cols product__cols-availability">
+      <div class="product__col">
+        <div class="availability">
+          Есть в наличии
+        </div>
+        <div class="product__vendor">артикул: 00122</div>
+      </div>
+      <button class="icon compare-btn product__compare active">
+        <img src="/assets/images/compare.svg" alt="">
+      </button>
+    </div>
     <div class="product__cols">
+      <div class="product__price">1 588 <span class="product__price-cur">руб/шт</span></div>
+      <div class="product__count">
+        <input class="input product__count-input" type="number" value="150"">
+                  <div class=" product__calc">
+        <button class="product__calc-plus">+</button>
+        <button class="product__calc-minus">-</button>
+      </div>
+    </div>
+    </div>
+    <div class="product__cols">
+      <button class="button product__button icon-text icon-text-small button-primary">
+        <img src="/assets/images/cart-white.svg" alt="">
+        <span class="text">в корзину</span>
+      </button>
+      <button class="button product__button button-secondary">
+        купить в 1 клик
+      </button>
+    </div>
+  </li>
+  <li class="product product-new">
+    <div class="favorites">
+      <button class="icon fovorites__button">
+        <img src="/assets/images/favorites.svg" alt="">
+      </button>
+    </div>
+    <a class="product__img-link" href="#">
+      <img class="product__img" src="/assets/images/product.jpg" alt="">
+    </a>
+    <div class="product__rating product__rating-card">
+      <div class="group-section">
+        <fieldset class="rating">
+          <div class="rating__group" id="reviewStars-input">
+            <input class="rating__star" id="star-4" type="radio" name="ball" value="1">
+            <label title="gorgeous" for="star-4"></label>
+            <input class="rating__star" id="star-3" type="radio" name="ball" value="2">
+            <label title="good" for="star-3"></label>
+            <input class="rating__star" checked id="star-2" type="radio" name="ball" value="3">
+            <label title="regular" for="star-2"></label>
+            <input class="rating__star" id="star-1" type="radio" name="ball" value="4">
+            <label title="poor" for="star-1"></label>
+            <input class="rating__star" id="star-0" type="radio" name="ball" value="5">
+            <label title="bad" for="star-0"></label>
+          </div>
+        </fieldset>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="product__title">
+      <a href="#" class="product__title-link">
+        Ящик универсальный
+      </a>
+    </div>
+    <ul class="list product__params">
+      <li class="product__param">
+        <span class="text-bold">Объем(л.)</span>
+        - 1000
+      </li>
+
+
+      <li class="product__param">
+        <span class="text-bold">Высота(см.)</span>
+        - 2000
+      </li>
+      <li class="product__param">
+        <span class="text-bold">Вес(кг.)</span>
+        - 100
+      </li>
+      <li class="product__param">
+        <span class="text-bold">Ширина(см.)</span>
+        - 1000
+      </li>
+      <li class="product__param">
+        <span class="text-bold">Материал</span>
+        - пластик
+      </li>
+
+
+    </ul>
+    <div class="product__cols product__cols-availability">
       <div class="product__col">
         <div class="availability">
           Есть в наличии
@@ -1076,11 +1162,22 @@
     </div>
   </li>
   </ul>
+  <div class="block-center load-more load-more-projects">
+    <button class="button-primary">показать еще</button>
+    <div class="pagination pagination-products">
+      <a class="pagination__arrow pagination__arrow-prev" href="#">назад</a>
+      <a class="pagination__link" href="#">1</a>
+      <a class="pagination__link" href="#">2</a>
+      <a class="pagination__link active" href="#">3</a>
+      <a class="pagination__link" href="#">4</a>
+      <a class="pagination__link" href="#">5</a>
+      <a class="pagination__link" href="#">6</a>
+      <a class="pagination__arrow pagination__arrow-next" href="#">вреред</a>
+    </div>
+  </div>
   </div>
   </div>
 
-  </div>
-  </div>
 </section>
 
 @@include("chunk/footer.html")

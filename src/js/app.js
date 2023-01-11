@@ -22,6 +22,25 @@ $(function () {
     ],
   });
 
+  $(".slider-default").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   if (window.matchMedia("(max-width: 1210px)").matches) {
     $(".slider-mobile").slick({
       slidesToShow: 3,
@@ -47,18 +66,24 @@ $(function () {
 
   menuList.forEach((menu) => {
     menu.addEventListener("click", (event) => {
+      
+      event.stopPropagation();
+      
       let toggleBtnSubmenu = event.target.closest(".submenu-btn");
-      let menuItemParent = event.target.closest(".menu__item.parent ");
+      let menuItemParent = event.target.closest(".menu__item.parent");
+      let submenuBox = event.target.closest(".submenu-box");
+
+
+
+      console.log(menuItemParent);
 
       if (toggleBtnSubmenu) {
         let currentMenuItem = toggleBtnSubmenu.closest(".submenu__item");
+        console.log('test1');
         currentMenuItem.classList.toggle("active");
-      } else if (menuItemParent && $(window).width() < 1160) {
+      } else if (!submenuBox && menuItemParent && $(window).width() < 1160) {
         $(menuItemParent.querySelector(".submenu-box")).fadeToggle(100);
         $(".fade").fadeToggle(100);
-        // let submenu = menuItemParent.querySelector('.submenu-box');
-
-        // submenu.classList.toggle('active');
       } else {
         return;
       }
@@ -104,4 +129,28 @@ $(function () {
       }
     });
   }
+
+
+  $(".tabs-wrapper").each(function () {
+    let ths = $(this);
+    ths.find(".tab-item").not(":first").hide();
+    ths
+      .find(".tab")
+      .click(function () {
+        ths
+          .find(".tab")
+          .removeClass("active")
+          .eq($(this).index())
+          .addClass("active");
+        ths.find(".tab-item").hide().eq($(this).index()).fadeIn();
+      })
+      .eq(0)
+      .addClass("active");
+  });
+
+  $('.button-hide').on('click', function(){
+    $('.container-hide').fadeToggle(100);
+  })
+
 });
+
