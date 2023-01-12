@@ -276,7 +276,6 @@
 @media (max-width: 960px) {
   .catalog {
     &-detail {
-
       &__top {
         gap: 25px;
         justify-content: space-between;
@@ -284,10 +283,7 @@
         .product__vendor {
           font-size: 16px;
         }
-
       }
-
-   
 
       &__center {
         flex-direction: column;
@@ -297,12 +293,10 @@
           order: 1;
         }
 
-
-      .product__cols {
-        justify-content: flex-start;
-        gap: 8px 20px;
-      }
-
+        .product__cols {
+          justify-content: flex-start;
+          gap: 8px 20px;
+        }
       }
 
       .product-colors {
@@ -464,6 +458,9 @@
     justify-content: center;
   }
 
+  .personal__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 800px) {
@@ -674,8 +671,10 @@
   .slider-default .product {
     max-width: none;
   }
-  
 
+  .personal__list {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {
