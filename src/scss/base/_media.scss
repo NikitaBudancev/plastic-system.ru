@@ -44,7 +44,8 @@
 }
 
 @media (max-width: 1210px) {
-  .slider-mobile {
+  .slider-mobile,
+  .slider-default {
     .slick-list {
       margin: 0 -8px;
       padding-top: 40px !important;
@@ -481,6 +482,19 @@
   }
 
   .news {
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__text {
+      order: 1;
+    }
+
+    &__images {
+      margin: 0 auto;
+    }
+
     &__inner {
       position: relative;
     }
@@ -668,9 +682,9 @@
   //   padding: 0px;
   // }
 
-  .slider-default .product {
-    max-width: none;
-  }
+  // .slider-default .product {
+  //   max-width: none;
+  // }
 
   .personal__list {
     grid-template-columns: 1fr;

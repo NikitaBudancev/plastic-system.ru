@@ -152,5 +152,17 @@ $(function () {
     $('.container-hide').fadeToggle(100);
   })
 
+
+  $('.catalog-sections__button').on('click', function(){
+    $('.catalog-sections').toggleClass('active');
+
+    if($(this).html() == 'Показать еще') {
+      $(this).html('Скрыть');
+    }else {
+      $(this).html('Показать еще');
+    }
+
+  })
+
 });
 
